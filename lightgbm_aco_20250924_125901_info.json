@@ -1,0 +1,36 @@
+{
+  "model_name": "lightgbm_aco_20250924_125901",
+  "created_at": "20250924_125901",
+  "algorithm": "LightGBM + ACO optimization",
+  "model_file": "lightgbm_aco_20250924_125901_native.txt",
+  "best_params": {
+    "num_leaves": 31,
+    "learning_rate": 0.01,
+    "min_child_weight": 0.001,
+    "min_child_samples": 80,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "subsample_freq": 1,
+    "boosting_type": "gbdt",
+    "subsample_for_bin": 200000,
+    "importance_type": "split"
+  },
+  "n_estimators": 300,
+  "n_features": 5,
+  "feature_names": [
+    "age",
+    "ap_hi",
+    "ap_lo",
+    "pulse_pressure",
+    "cholesterol"
+  ],
+  "n_train_samples": 43751,
+  "n_test_samples": 18751,
+  "training_auc": 0.7870180958887666,
+  "test_auc": 0.7972617929704875,
+  "test_accuracy": 0.733400885286118,
+  "target_classes": {
+    "0": "Healthy (Khỏe mạnh)",
+    "1": "AMI (Đau tim cấp)"
+  }
+}
